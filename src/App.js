@@ -1,16 +1,18 @@
 import React from 'react';
+import Header from './components/Header/Header';
+import SpiritCard from './components/SpiritCard/SpiritCard';
+import Drink from './components/Drink/Drink';
+import DrinkCard from './components/DrinkCard/DrinkCard';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <div className = "wrapper">
-      <header className="App-header">
-          <h1 className = "pageHeader">MIXR</h1>
-      </header>
-      <header className="subHeader">
-        <h3>CHOOSE YOUR SPIRIT</h3>
-      </header>
+        <Header />
+        {/* <SpiritCard /> */}
+        {/* <DrinkCard /> */}
+        <Drink />
       </div>
     </div>
   );
