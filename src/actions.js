@@ -1,3 +1,5 @@
+// import drinks from './components/testData';
+
 export const getData = () => () => {}
 
 // export const getData = () => (dispatch) => {

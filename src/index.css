@@ -34,6 +34,8 @@ li {
 }
 
 .spiritCard {
+  font-family: 'Amatic SC', cursive;
+  color: black;
   width: 20vw;
   padding: 2.5vw;
   margin: 2vw 4vw 2vw 4vw;
@@ -48,15 +50,16 @@ li {
 }
 
 .spiritCard h5{
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .drinkCards {
   font-weight: bold;
   margin: auto;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.7);
   height: 30vh;
   width: 40vw;  
+  box-shadow: 4px 4px #000000;
 }
 
 .test {
@@ -79,12 +82,6 @@ li {
   padding: 1rem;
 }
 
-.backButton {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  background-color: white;
-}
 .fourText {
   z-index: 3 !important;
   color: white;
