@@ -4,14 +4,15 @@ import SpiritCard from './components/SpiritCard/SpiritCard';
 import Drink from './components/Drink/Drink';
 import DrinkCard from './components/DrinkCard/DrinkCard';
 import './App.css';
+// import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
       <div className = "wrapper">
         <Header />
-        {/* <SpiritCard /> */}
-        {/* <DrinkCard /> */}
+        <SpiritCard />
+        <DrinkCard />
         <Drink />
       </div>
     </div>

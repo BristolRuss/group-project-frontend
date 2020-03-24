@@ -5,7 +5,9 @@ const Drink = () => (
     <header className="subHeader">
       <h3>STRAWBERRY DAIQUIRI</h3>
     </header>
-    <section className = "spiritSection ">
+    <section className = "spiritSection" style = {{
+      backgroundImage: 'url("https://www.thespruceeats.com/thmb/Wkv4Vu76pPHtdgJ52Jn7ffcikL0=/2048x1152/smart/filters:no_upscale()/strawberry-daiquiri-recipes-759821_13_preview1-5b05f448ba61770036fbae90.jpeg")'
+    }}>
         <div className = "drinkCards primary">
             <h3>INGREDIENTS</h3>
             <ul>
@@ -15,7 +17,6 @@ const Drink = () => (
                 <li>4 pieces strawberry</li>
                 <li>ice cubes</li>
             </ul>
-            <img className="test" src = 'https://i2.wp.com/www.missinthekitchen.com/wp-content/uploads/2017/02/Strawberry-Daiquiri-Recipe-Photo-4.jpg' />
         </div>
         <div className = "drinkCards">
             <h3>METHOD</h3>
