@@ -2,15 +2,25 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 class DrinkCard extends React.Component {
+    componentDidMount() {
+        this.props.getData();
+    }
+
     render() {
         return (
             <>
                 <header className="subHeader">
                     <h3>RUM</h3>
                 </header>
-                <Link className = "btn backButton" to = "/">BACK</Link>
                 <section className = "spiritSection">
-                    <div className = "spiritCard drinkColour">
+                    {this.props.drinks.map(drink => (
+                        <Link to = {`/drink/${drink.id}`} >
+                            <div className = "spiritCard drinkColour">
+                                <h5>{drink.name.toUpperCase()}</h5>
+                            </div>
+                        </Link>   
+                    ))}
+                    {/* <div className = "spiritCard drinkColour">
                         <h5>DAIQUIRI</h5>
                     </div>
                     <Link to = "/drink/1" >
@@ -29,7 +39,7 @@ class DrinkCard extends React.Component {
                     </div>
                     <div className = "spiritCard drinkColour">
                         <h5>MALIBU BEACH</h5>
-                    </div>
+                    </div> */}
                 </section>
             </>
         )

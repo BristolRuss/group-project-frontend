@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './components/Header/Header';
 import SpiritCard from './components/SpiritCard/SpiritCard';
 import Drink from './components/Drink/Drink';
-import DrinkCard from './components/DrinkCard/DrinkCard';
+import DrinkCard from './components/DrinkCard';
 import FourOhFour from './components/FourOhFour/FourOhFour';
 import './App.css';
 import { BrowserRouter as Router, Route, Switch} from "react-router-dom";

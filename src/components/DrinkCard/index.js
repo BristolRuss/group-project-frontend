@@ -1,5 +1,6 @@
 import { connect } from 'react-redux';
 import DrinkCard from './DrinkCard';
+import { getData } from '../../actions';
 
 const mapStateToProps = (state) => {
     return {
@@ -7,4 +8,10 @@ const mapStateToProps = (state) => {
     }
 }
 
-export default connect(mapStateToProps)(DrinkCard);
+const mapDispatchToProps = dispatch => {
+    return {
+        getData: () => dispatch(getData())
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(DrinkCard);
