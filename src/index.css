@@ -79,6 +79,24 @@ li {
   padding: 1rem;
 }
 
+.backButton {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: white;
+}
+.fourText {
+  z-index: 3 !important;
+  color: white;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .disappointed {
+    z-index: 0;
+    animation: App-logo-spin infinite 15s linear;
+  }
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

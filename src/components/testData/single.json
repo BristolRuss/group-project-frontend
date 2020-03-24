@@ -1,0 +1,24 @@
+{
+    "id":3,
+    "name": "zombie",
+    "method": [
+        "Fill up the glass with ice",
+        "Fill up the shaker with ice",
+        "Pour pineapple juice, orange juice, gold rum, Angostura bitters, white rum into the shaker",
+        "Shake well",
+        "Strain into the glass",
+        "Garnish with pineapple and orange"
+
+    ],
+    
+    "ingredients": [
+        "1 part white rum",
+        "1 dash of Angostura bitters",
+        "1 part gold rum",
+        "1 part lime juice",
+        "1 part pineapple juice",
+        "0.5 parts of overproof rum",
+        "1 part of dark rum and crushed ice"
+    ],
+    "image": "URL"
+}

@@ -1,14 +1,17 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-const SpiritCard = () => (
+const SpiritCard = ({id, name }) => (
   <>
     <header className="subHeader">
       <h3>CHOOSE YOUR SPIRIT</h3>
     </header>
     <section className = "spiritSection">
-      <div className = "spiritCard spiritColour">
-        <h5>RUM</h5>
-      </div>
+      <Link to = "/spirit/1" >
+        <div className = "spiritCard spiritColour">
+          <h5>RUM</h5>
+        </div>
+      </Link>
       <div className = "spiritCard spiritColour">
         <h5>RUM</h5>
       </div>

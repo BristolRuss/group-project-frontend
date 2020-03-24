@@ -1,7 +1,9 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Drink = () => (
   <>
+    <Link className = "btn backButton" to = "/spirit/1">BACK</Link>
     <header className="subHeader">
       <h3>STRAWBERRY DAIQUIRI</h3>
     </header>
