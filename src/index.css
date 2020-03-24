@@ -17,12 +17,20 @@ body {
   max-width: 100%;
 }
 
+li {
+  list-style: none;
+}
+
 .spiritSection {
   width: 100%;
+  height: 60%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
+  background-repeat: no-repeat;
+  background-size: contain;
+	background-position: center;
 }
 
 .spiritCard {
@@ -44,18 +52,12 @@ body {
 }
 
 .drinkCards {
-  background: rgba(255, 255, 255, 0.6);
+  font-weight: bold;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.8);
+  height: 30vh;
   width: 40vw;  
 }
-/* 
-.primary {
-  background: rgba(255, 255, 255, 0.6) url('./images/Strawberry-Daiquiri-Recipe-Photo-4.jpg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  padding: 120px;
-  margin: -20px;
-  object-fit: cover;
-} */
 
 .test {
   width: 40%;
