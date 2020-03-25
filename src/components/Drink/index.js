@@ -2,9 +2,9 @@ import { connect } from 'react-redux';
 import Drink from './Drink';
 import { getData } from '../../actions';
 
-const mapStateToProps = (state) => {
+const mapStateToProps = (state, props) => {
     return {
-        drink: Object.values(state.drinks)
+        drink: state.drinks[props.id]
     }
 }
 

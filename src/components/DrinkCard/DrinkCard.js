@@ -14,7 +14,7 @@ class DrinkCard extends React.Component {
                 </header>
                 <section className = "spiritSection">
                     {this.props.drinks.map(drink => (
-                        <Link to = {`/drink/${drink.id}`} >
+                        <Link key={drink.id} to = {`/drink/${drink.id}`} >
                             <div className = "card spiritCard drinkColour">
                                 <h5>{drink.name.toUpperCase()}</h5>
                             </div>

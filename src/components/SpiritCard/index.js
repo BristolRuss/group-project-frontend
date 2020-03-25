@@ -1,11 +1,17 @@
 import { connect } from 'react-redux';
 import SpiritCard from './SpiritCard';
+import { getData } from '../../actions';
 
 const mapStateToProps = (state) => {
     return {
-        id: state.id,
-        name: state.name
+        spirits: Object.values(state.spirits)
     }
 }
 
-export default connect(mapStateToProps)(SpiritCard);
+const mapDispatchToProps = dispatch => {
+    return {
+        getData: () => dispatch(getData())
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(SpiritCard); 

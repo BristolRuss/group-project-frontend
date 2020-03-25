@@ -14,9 +14,14 @@
   color: #61dafb;
 }
 
+.fourText {
+  color: white;
+  z-index: 8 !important;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .disappointed {
-    z-index: 0;
+    z-index: 0 !important;
     animation: App-logo-spin infinite 15s linear;
   }
 }
