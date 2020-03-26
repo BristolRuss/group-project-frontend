@@ -11,9 +11,21 @@ const setCocktails = (state, action) => {
 	return newState;
 }
 
+const setDrink = (state, action) => {
+	const newState = {
+		...state,
+		drinks: {
+			...state.drinks,
+			[action.id]: action
+		}
+	}
+	return newState;
+}
+
 const reducer = (state, action) => {
     switch(action.type) {
-        case "SETCOCKTAILS": return setCocktails(state, action.data); 
+		case "SETCOCKTAILS": return setCocktails(state, action.data); 
+		case "SETDRINK": return setDrink(state, action.data.data); 
         default: return state;
     }
 };

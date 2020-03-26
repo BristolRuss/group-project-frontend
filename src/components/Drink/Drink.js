@@ -1,11 +1,13 @@
 import React from 'react';
 
 class Drink extends React.Component {
-    componentDidMount() {
-        // this.props.getData();
+      componentDidMount() {
+        this.props.getData();
     }
-
     render() {
+      if(!this.props.drink){
+        return null
+      }
         const {name, ingredients, method, image} = this.props.drink;
         return (
             <>
@@ -19,8 +21,8 @@ class Drink extends React.Component {
                       <h3>INGREDIENTS</h3>
                       <ul>
                       {ingredients.map(ingredient => (
-                        <li key = {ingredient}>
-                            <h5>{ingredient}</h5>
+                        <li key = {ingredient.ingredient}>
+                            <h5>{ingredient.ingredient}</h5>
                         </li>))} 
                       </ul>
                   </div>

@@ -1,17 +1,17 @@
 import { connect } from 'react-redux';
 import Drink from './Drink';
-// import { getData } from '../Data/actions';
+import { getDrink } from '../../data/actions';
 
 const mapStateToProps = (state, props) => {
+    console.log(state)
     return {
-        drink: state.drinks[props.id]
+        drink: state.drinks[+props.id]
     }
 }
 
-const mapDispatchToProps = dispatch => {
+const mapDispatchToProps = (dispatch, props) => {
     return {
-        // getData: () => dispatch(getData())
+        getData: () => dispatch(getDrink(props.id))
     }
 }
-
 export default connect(mapStateToProps, mapDispatchToProps)(Drink);
