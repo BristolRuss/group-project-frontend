@@ -15,8 +15,10 @@ class SpiritCard extends React.Component {
           <section className = "spiritSection">
             {this.props.spirits.map(spirit => (
               <Link key={spirit.id} to = {`/spirit/${spirit.id}`} >
-                  <div className = "card spiritCard spiritColour">
-                      <h5>{spirit.name.toUpperCase()}</h5>
+                  <div className = "card spiritCard spiritColour" style = {{
+                    background: `url(${spirit.image})`, backgroundSize: "cover", opacity: "85%"
+                  }}>
+                      <h5 className="drinkCardH5">{spirit.name.toUpperCase()}</h5>
                   </div>
               </Link>))}
           </section>
