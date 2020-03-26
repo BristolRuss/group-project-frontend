@@ -13,10 +13,9 @@ const setCocktails = (state, action) => {
 
 const reducer = (state, action) => {
     switch(action.type) {
-        case "SETCOCKTAILS": return setCocktails(state); 
+        case "SETCOCKTAILS": return setCocktails(state, action.data); 
         default: return state;
     }
 };
 
 export default reducer;
-
