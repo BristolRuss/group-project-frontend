@@ -5,7 +5,7 @@ import Drink from './components/Drink';
 import DrinkCard from './components/DrinkCard';
 import FourOhFour from './components/FourOhFour/FourOhFour';
 import './App.css';
-import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import { HashRouter as Router, Route, Switch} from "react-router-dom";
 
 
 function App() {
