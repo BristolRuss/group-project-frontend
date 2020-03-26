@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import DrinkCard from './DrinkCard';
-import { getCocktails } from '../Data/actions';
+import { getCocktails } from '../../data/actions';
 
 const mapStateToProps = (state) => {
     return {
