@@ -13,13 +13,19 @@ body {
 
 .wrapper {
   background-color: rgba(20, 20, 20, 0.8);
+  position: relative;
   height: 100vh;
+  overflow: auto;
   max-width: 100%;
 }
 
 li {
   list-style: none;
 }
+
+/* .test {
+  
+} */
 
 .spiritSection {
   width: 100%;
@@ -34,9 +40,9 @@ li {
 }
 
 .spiritCard {
-  /* font-family: 'Amatic SC', cursive; */
   font-family: 'Special Elite', cursive;
   color: black;
+  min-height: 150px;
   width: 20vw;
   padding: 2.5vw;
   margin: 2vw 4vw 2vw 4vw;
@@ -64,11 +70,11 @@ li {
   box-shadow: 10px 10px 9px -6px rgba(0,0,0,0.75);
 }
 
-.test {
-  width: 40%;
-  overflow: hidden;
-  opacity: 0.7;
-  margin: -450px;
+.drinkCardH5 {
+  text-shadow: 2px 1px white;
+  background: rgba(255, 255, 255, 0.5);
+  padding-top: 7px;
+  /* border: 1px solid black */
 }
 
 .subHeader {
