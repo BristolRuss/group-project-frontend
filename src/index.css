@@ -34,7 +34,8 @@ li {
 }
 
 .spiritCard {
-  font-family: 'Amatic SC', cursive;
+  /* font-family: 'Amatic SC', cursive; */
+  font-family: 'Special Elite', cursive;
   color: black;
   width: 20vw;
   padding: 2.5vw;
@@ -72,8 +73,14 @@ li {
 
 .subHeader {
   background: white;
+  font-family: 'Special Elite', cursive;
   padding: 12px;
   margin-bottom: 6vh;
+}
+
+.subHeader h3{
+  margin-bottom: 0;
+  font-size: 2.5rem;
 }
 
 .pageHeader {

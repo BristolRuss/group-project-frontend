@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import SpiritCard from './SpiritCard';
-import { getData } from '../../actions';
+// import { getData } from '../Data/actions';
 
 const mapStateToProps = (state) => {
     return {
@@ -10,7 +10,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        getData: () => dispatch(getData())
+        // getData: () => dispatch(getData())
     }
 }
 

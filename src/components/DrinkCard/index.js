@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import DrinkCard from './DrinkCard';
-import { getData } from '../../actions';
+import { getCocktails } from '../Data/actions';
 
 const mapStateToProps = (state) => {
     return {
@@ -8,9 +8,9 @@ const mapStateToProps = (state) => {
     }
 }
 
-const mapDispatchToProps = dispatch => {
+const mapDispatchToProps = (dispatch, props) => {
     return {
-        getData: () => dispatch(getData())
+        getData: () => dispatch(getCocktails(props.id))
     }
 }
 

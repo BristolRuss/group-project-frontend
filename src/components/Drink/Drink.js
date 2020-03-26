@@ -2,7 +2,7 @@ import React from 'react';
 
 class Drink extends React.Component {
     componentDidMount() {
-        this.props.getData();
+        // this.props.getData();
     }
 
     render() {

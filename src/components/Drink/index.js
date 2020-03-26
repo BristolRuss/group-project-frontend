@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import Drink from './Drink';
-import { getData } from '../../actions';
+// import { getData } from '../Data/actions';
 
 const mapStateToProps = (state, props) => {
     return {
@@ -10,7 +10,7 @@ const mapStateToProps = (state, props) => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        getData: () => dispatch(getData())
+        // getData: () => dispatch(getData())
     }
 }
 

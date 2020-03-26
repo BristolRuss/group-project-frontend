@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 class SpiritCard extends React.Component {
   componentDidMount() {
-      this.props.getData();
+      // this.props.getData();
   }
 
   render() {
