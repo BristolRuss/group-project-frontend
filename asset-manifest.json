@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/group-project-frontend/static/css/main.f88cb620.chunk.css",
-    "main.js": "/group-project-frontend/static/js/main.ecd5423e.chunk.js",
-    "main.js.map": "/group-project-frontend/static/js/main.ecd5423e.chunk.js.map",
+    "main.css": "/group-project-frontend/static/css/main.4af0e534.chunk.css",
+    "main.js": "/group-project-frontend/static/js/main.f6b6531c.chunk.js",
+    "main.js.map": "/group-project-frontend/static/js/main.f6b6531c.chunk.js.map",
     "runtime-main.js": "/group-project-frontend/static/js/runtime-main.9f8d027e.js",
     "runtime-main.js.map": "/group-project-frontend/static/js/runtime-main.9f8d027e.js.map",
     "static/js/2.1df502d5.chunk.js": "/group-project-frontend/static/js/2.1df502d5.chunk.js",
     "static/js/2.1df502d5.chunk.js.map": "/group-project-frontend/static/js/2.1df502d5.chunk.js.map",
     "index.html": "/group-project-frontend/index.html",
-    "precache-manifest.47c58bd79fd0a9f0cd3efb61c49d3cfb.js": "/group-project-frontend/precache-manifest.47c58bd79fd0a9f0cd3efb61c49d3cfb.js",
+    "precache-manifest.eb3c836e09d221509e48ad52d46d86f4.js": "/group-project-frontend/precache-manifest.eb3c836e09d221509e48ad52d46d86f4.js",
     "service-worker.js": "/group-project-frontend/service-worker.js",
-    "static/css/main.f88cb620.chunk.css.map": "/group-project-frontend/static/css/main.f88cb620.chunk.css.map",
+    "static/css/main.4af0e534.chunk.css.map": "/group-project-frontend/static/css/main.4af0e534.chunk.css.map",
     "static/js/2.1df502d5.chunk.js.LICENSE.txt": "/group-project-frontend/static/js/2.1df502d5.chunk.js.LICENSE.txt",
     "static/media/index.css": "/group-project-frontend/static/media/assorted-wine-bottles-1283219.5a848c29.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.9f8d027e.js",
     "static/js/2.1df502d5.chunk.js",
-    "static/css/main.f88cb620.chunk.css",
-    "static/js/main.ecd5423e.chunk.js"
+    "static/css/main.4af0e534.chunk.css",
+    "static/js/main.f6b6531c.chunk.js"
   ]
 }
