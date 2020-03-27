@@ -3,7 +3,6 @@ import Drink from './Drink';
 import { getDrink } from '../../data/actions';
 
 const mapStateToProps = (state, props) => {
-    console.log(state)
     return {
         drink: state.drinks[+props.id]
     }
