@@ -1,16 +1,49 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import EasterEgg from '../EasterEgg/EasterEgg'
 
 class SpiritCard extends React.Component {
-  componentDidMount() {
-      // this.props.getData();
+  constructor(){
+    super();
+    this.state = {
+        u: false,
+        n: false,
+        o: false
+    };
+    this.handleU = this.handleU.bind(this);
+    this.handleN = this.handleN.bind(this);
+    this.handleO = this.handleO.bind(this);
+}
+  handleU(){
+    this.setState({
+        u: true
+    })
   }
 
+  handleN(){
+    this.setState({
+        n: true
+    })
+  }
+
+  handleO(){
+    this.setState({
+        o: true
+    })
+  }
+  // <Link className="ee" to = "/easterEgg"></Link>
+
   render() {
+    let {u, n, o} = this.state;
+
+    if(u && n && o === true){
+      return <EasterEgg />
+    }
+    else {
       return (
         <>
           <header className="subHeader">
-            <h3>CHOOSE YOUR SPIRIT</h3>
+            <h3>CHO<span onClick = {this.handleO}>O</span>SE YO<span onClick = {this.handleU}>U</span>R POISO<span onClick = {this.handleN}>N</span></h3>
           </header>
           <section className = "spiritSection">
             {this.props.spirits.map(spirit => (
@@ -24,6 +57,7 @@ class SpiritCard extends React.Component {
           </section>
         </>
       )
+    }
   }
 }
 

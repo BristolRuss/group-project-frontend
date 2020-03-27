@@ -3,6 +3,7 @@ import Header from './components/Header/Header';
 import SpiritCard from './components/SpiritCard';
 import Drink from './components/Drink';
 import DrinkCard from './components/DrinkCard';
+import EasterEgg from './components/EasterEgg/EasterEgg'
 import FourOhFour from './components/FourOhFour/FourOhFour';
 import './App.css';
 import { HashRouter as Router, Route, Switch} from "react-router-dom";
@@ -24,6 +25,9 @@ function App() {
             <Route path = "/drink/:id" render = { ({match}) => (
                 <Drink id = {match.params.id} />
             ) } />
+            <Route path = "/easterEgg">
+              <EasterEgg/>
+              </Route>
             <Route component = {FourOhFour} />
           </Switch>
         </Router>
