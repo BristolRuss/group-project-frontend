@@ -36,7 +36,7 @@ class Drink extends React.Component {
                       </ul>
                   </div>
               </section>
-              <iframe style = {{opacity: "0"}} width="560" height="315" src="https://www.youtube.com/embed/TazHNpt6OTo?controls=0&autoplay=1&amp;start=41" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe title="pinaColada" style = {{opacity: "0"}} width="560" height="315" src="https://www.youtube.com/embed/TazHNpt6OTo?controls=0&autoplay=1&amp;start=41" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             </>
         )
     }

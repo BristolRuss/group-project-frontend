@@ -1,4 +1,5 @@
 const initial = {
+	verified: false,
 	drinks: {
 	},
 	spirits: {

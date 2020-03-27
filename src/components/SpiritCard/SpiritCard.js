@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import EasterEgg from '../EasterEgg/EasterEgg'
+import EasterEgg from '../EasterEgg/EasterEgg';
+import AgeVerification from '../AgeVerification';
 
 class SpiritCard extends React.Component {
   constructor(){
@@ -8,7 +9,7 @@ class SpiritCard extends React.Component {
     this.state = {
         u: false,
         n: false,
-        o: false
+        o: false,
     };
     this.handleU = this.handleU.bind(this);
     this.handleN = this.handleN.bind(this);
@@ -31,7 +32,6 @@ class SpiritCard extends React.Component {
         o: true
     })
   }
-  // <Link className="ee" to = "/easterEgg"></Link>
 
   render() {
     let {u, n, o} = this.state;
@@ -60,5 +60,6 @@ class SpiritCard extends React.Component {
     }
   }
 }
+
 
 export default SpiritCard;
