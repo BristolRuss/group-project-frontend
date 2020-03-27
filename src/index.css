@@ -78,6 +78,11 @@ ul {
   padding: 0px;
 }
 
+.verification {
+  min-width: 12vw;
+  min-height: 5vw;;
+}
+
 .drinkCards {
   font-weight: bold;
   font-family: 'Special Elite', cursive;

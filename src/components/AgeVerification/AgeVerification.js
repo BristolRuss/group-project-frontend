@@ -7,8 +7,8 @@ const AgeVerification = ({verified}) => {
         <div>
             <h3 className = "subHeader">Please select an option below:</h3>
         </div>
-        <button onClick = {verified} className="btn subHeader" style={{margin: "30px", width: "10vw", padding: "1rem"}}>Yes, I am old enough to enter</button>
-        <a href = "https://www.youtube.com/watch?v=TazHNpt6OTo" target="_blank"><button className="btn subHeader" style={{margin: "30px", width: "10vw", padding: "1rem"}}>No, take me away</button></a>
+        <button onClick = {verified} className="btn verification subHeader" style={{margin: "30px", width: "10vw", padding: "1rem"}}>Yes, I am old enough to enter</button>
+        <a href = "https://www.youtube.com/watch?v=TazHNpt6OTo" target="_blank"><button className="btn verification subHeader" style={{margin: "30px", width: "10vw", padding: "1rem"}}>No, take me away</button></a>
     </section>
     )
 }
