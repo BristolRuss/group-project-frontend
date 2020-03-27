@@ -1,18 +1,20 @@
 import React from 'react';
-import Header from './components/Header/Header';
-import SpiritCard from './components/SpiritCard';
-import Drink from './components/Drink';
-import DrinkCard from './components/DrinkCard';
-import EasterEgg from './components/EasterEgg/EasterEgg'
-import FourOhFour from './components/FourOhFour/FourOhFour';
-import './App.css';
+import Header from '../Header/Header';
+import SpiritCard from '../SpiritCard';
+import Drink from '../Drink';
+import DrinkCard from '../DrinkCard';
+import EasterEgg from '../EasterEgg/EasterEgg'
+import FourOhFour from '../FourOhFour/FourOhFour';
+import '../../App.css';
 import { HashRouter as Router, Route, Switch} from "react-router-dom";
+import AgeVerification from '../AgeVerification';
 
 
-function App() {
+function App({verified}) {
   return (
     <div className="App">
       <div className = "wrapper">
+      {!verified ? <AgeVerification /> : (
         <Router>
           <Header />
           <Switch>
@@ -31,6 +33,7 @@ function App() {
             <Route component = {FourOhFour} />
           </Switch>
         </Router>
+        )}
       </div>
     </div>
   );

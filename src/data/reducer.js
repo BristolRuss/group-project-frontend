@@ -22,7 +22,7 @@ const setDrink = (state, action) => {
 	return newState;
 }
 
-const verified = (state, action) => {
+const verified = (state) => {
 	const newState = {
 		...state,
 		verified: true
@@ -34,7 +34,7 @@ const reducer = (state, action) => {
     switch(action.type) {
 		case "SETCOCKTAILS": return setCocktails(state, action.data); 
 		case "SETDRINK": return setDrink(state, action.data.data); 
-		case "VERIFIED": return verified(state, action)
+		case "VERIFIED": return verified(state)
         default: return state;
     }
 };

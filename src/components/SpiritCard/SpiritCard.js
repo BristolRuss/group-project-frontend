@@ -36,7 +36,10 @@ class SpiritCard extends React.Component {
   render() {
     let {u, n, o} = this.state;
 
-    if(u && n && o === true){
+    if(this.props.verified === false){
+      return <AgeVerification />
+    }
+    else if(u && n && o === true){
       return <EasterEgg />
     }
     else {
